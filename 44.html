@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lecture 9 - Gradients, Floats & Pseudo-classes</title>
+    <link rel="stylesheet" href="44.css">
+</head>
+<body>
+    <h2>CSS Gradients</h2>
+    <div class="linear-grad"></div>
+    <div class="radial-grad"></div>
+
+    <h2>Floats & Clear</h2>
+    <div>
+        <div class="float-img">Floated Box</div>
+        <p>This text wraps around the floated container. Floats are utilized to align block elements adjacently within the flow.</p>
+    </div>
+    <div class="clear-float">
+        <p>This paragraph applies the clear property, positioning it below all floated elements.</p>
+    </div>
+
+    <h2>Lists & Markers</h2>
+    <ul class="custom-list">
+        <li>List Item Alpha</li>
+        <li>List Item Beta</li>
+    </ul>
+
+    <h2>Tables</h2>
+    <table>
+        <tr>
+            <th>Protocol</th>
+            <th>Port</th>
+        </tr>
+        <tr>
+            <td>HTTP</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <h2>Pseudo-classes & Forms</h2>
+    <p><a href="#">Hyperlink Element (Hover, Active, Visited States)</a></p>
+    <form>
+        <label>Focus/Required:</label> <input type="text" required><br><br>
+        <label>Disabled:</label> <input type="text" disabled value="Immutable Input"><br><br>
+        <input type="checkbox" id="chk" checked> <label for="chk">Checked Pseudo-class</label>
+    </form>
+    
+    <p>Empty Element State:</p>
+    <div class="empty-box"></div>
+
+    <h2>Pseudo-elements</h2>
+    <p class="special-text">this paragraph targets the first letter and first line for specific rendering. Select this text to view the custom ::selection properties.</p>
+    <p class="quote">Generated content insertion</p>
+</body>
+</html>

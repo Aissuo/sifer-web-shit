@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lecture 5 - Advanced Forms & Frames</title>
+</head>
+<body>
+    <h2>Advanced Form Elements</h2>
+    <form>
+        <label for="drinks">Select Your Favorite Drink:</label>
+        <select name="drinks" id="drinks" size="4">
+            <optgroup label="Hot Drinks">
+                <option value="T">Tea</option>
+                <option value="M">Milk</option>
+                <option value="C" selected>Coffee</option>
+            </optgroup>
+            <optgroup label="Cold Drinks">
+                <option value="IC">Ice Coffee</option>
+                <option value="NJ">Natural Juices</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="msg">Leave a Message:</label><br>
+        <textarea id="msg" name="text" rows="5" cols="30" placeholder="Write your message here..."></textarea><br><br>
+
+        <label for="country">Select Country:</label>
+        <input list="countryList" name="Country" id="country">
+        <datalist id="countryList">
+            <option value="Iraq">
+            <option value="Iran">
+            <option value="Syria">
+            <option value="Turkiye">
+        </datalist>
+    </form>
+
+    <h2>Preformatted Text Block</h2>
+    <pre>
+        Name   : Ali Ahmed
+        Age    : 30 years
+        Gender : Male
+    </pre>
+
+    <h2>Embedded IFrame</h2>
+    <iframe src="Page1.html" width="600" height="400"></iframe>
+</body>
+</html>

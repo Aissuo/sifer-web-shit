@@ -1,0 +1,46 @@
+/* Overflow Properties */
+.scroll-box {
+    width: 200px;
+    height: 65px;
+    background-color: coral;
+    overflow: scroll; 
+    margin-bottom: 20px;
+}
+
+/* Text Formatting */
+.styled-text {
+    color: darkred;
+    text-align: justify;
+    direction: ltr; 
+    text-decoration: underline double red 3px; 
+    text-transform: capitalize;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.8;
+    text-shadow: 2px 2px 5px gray;
+}
+
+/* White-space & Text-overflow */
+.clipped-text {
+    width: 150px;
+    border: 1px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+/* Word Break */
+.break-word {
+    width: 100px;
+    border: 1px solid blue;
+    word-break: break-all;
+}
+
+/* Font Properties */
+.custom-font {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}

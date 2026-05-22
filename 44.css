@@ -1,0 +1,100 @@
+/* Gradients */
+.linear-grad {
+    height: 100px;
+    background-image: linear-gradient(to top left, red, yellow, green);
+    margin-bottom: 10px;
+}
+
+.radial-grad {
+    height: 100px;
+    background-image: radial-gradient(circle at center, blue, lightblue);
+    margin-bottom: 20px;
+}
+
+/* Float & Clear */
+.float-img {
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+}
+
+.clear-float {
+    clear: both;
+}
+
+/* List Styling */
+ul.custom-list {
+    list-style: square inside; 
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+ul.custom-list li::marker {
+    color: red;
+    font-size: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Pseudo-classes */
+a:link { color: blue; }
+a:visited { color: purple; text-decoration: none; }
+a:hover { background-color: yellow; }
+a:active { color: red; }
+
+input:focus { background-color: lightyellow; }
+input:disabled { background-color: lightgray; }
+input:required { border-color: red; }
+input:checked + label { font-weight: bold; color: green; }
+
+.empty-box:empty {
+    width: 50px; height: 50px; background-color: salmon;
+}
+
+/* Pseudo-elements */
+.special-text::first-letter {
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.special-text::first-line {
+    text-transform: uppercase;
+}
+
+::selection {
+    background: yellow;
+    color: red;
+}
+
+.quote::before { 
+    content: "“"; 
+    color: gray; 
+    font-size: 20px;
+}
+
+.quote::after { 
+    content: "”"; 
+    color: gray; 
+    font-size: 20px;
+}

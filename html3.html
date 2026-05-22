@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lecture 4 - Multimedia & Forms Part 1</title>
+</head>
+<body>
+    <h2>Multimedia Elements</h2>
+    <audio controls autoplay muted loop>
+        <source src="test.mp3" type="audio/mpeg">
+        <source src="test.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <video controls width="400" height="300" poster="thumbnail.jpg">
+        <source src="test.mp4" type="video/mp4">
+        <source src="test.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Basic Input Form</h2>
+    <form action="/submit-handler">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name" required autofocus maxlength="20"><br><br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" readonly value="securePass"><br><br>
+
+        <label for="age">Age (Number):</label>
+        <input type="number" id="age" min="18" max="100" step="1"><br><br>
+
+        <label for="bday">Birthday:</label>
+        <input type="date" id="bday"><br><br>
+
+        <p>Choose Operating System:</p>
+        <input type="radio" id="win" name="os" value="Windows" checked>
+        <label for="win">Windows</label>
+        <input type="radio" id="linux" name="os" value="Linux">
+        <label for="linux">Linux</label><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe" disabled>
+        <label for="subscribe">Subscribe to newsletter (Disabled)</label><br><br>
+
+        <label for="myfile">Upload File:</label>
+        <input type="file" id="myfile" multiple><br><br>
+
+        <input type="hidden" name="session_id" value="1029384756">
+        <input type="reset" value="Clear Form">
+        <input type="submit" value="Submit Data">
+    </form>
+</body>
+</html>

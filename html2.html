@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lecture 3 - Lists and Tables</title>
+</head>
+<body>
+    <div>
+        <h2>HTML Lists</h2>
+        
+        <ul>
+            <li>Unordered Item 1</li>
+            <li>Unordered Item 2
+                <ul>
+                    <li>Nested Item 1</li>
+                    <li>Nested Item 2</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ol type="A" start="3">
+            <li>Ordered Item C</li>
+            <li>Ordered Item D</li>
+        </ol>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>HTML Tables</h2>
+        <table border="2">
+            <caption>Student Info</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ali</td>
+                    <td>Mohammed</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Phone</td>
+                    <td colspan="2">0750</td>
+                </tr>
+                <tr>
+                    <td colspan="2">0770</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+    <p>This is an example of a <span style="color: red;">span element</span> used inside a block.</p>
+</body>
+</html>
